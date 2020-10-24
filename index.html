@@ -16,6 +16,7 @@
     <script>
         document.querySelector('#text').addEventListener('input', (event) => {
             event.preventDefault();
+            event.stopPropagation();
             console.log(event.currentTarget.value);
         })
     </script>
